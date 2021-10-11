@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="Aplikasi Kontak"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="8dp"
+        android:text="Nama :"
+        android:textColor="@color/black"
+        android:layout_marginLeft="13dp"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:hint="Masukan Nama Anda"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/txtNama" />
+
+    <TextView
+        android:id="@+id/txtNama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNama"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/black"
+        android:text="Alamat :"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editNama1"
+        android:hint="Masukan Alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/txtNama1" />
+
+    <TextView
+        android:id="@+id/txtNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNama1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="19dp"
+        android:text="No. Hp :"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editNama2"
+        android:inputType="number"
+        android:hint="Masukan No Handphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNama1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/txtNama2" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_below="@id/editNama2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNama3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="26dp"
+            android:text="Jenis Kelamin :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="19dp"
+                android:text="Pria"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="0dp"
+                android:text="Wanita"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNama4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="19dp"
+        android:text="Lokasi Pendaftaran :"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_below="@id/txtNama4"
+        android:src="@drawable/map"
+        android:layout_width="170dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="70dp"/>
+
+
+    <TextView
+        android:id="@+id/txtNama5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="19dp"
+        android:text="Upload Foto : Pilih File.."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/img"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="1dp"
+        android:layout_toRightOf="@id/txtNama5"
+        android:text="Upload"
+        android:backgroundTint="@color/main"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Submit"
+        android:backgroundTint="@color/main"
+        android:textStyle="bold"
+        android:shadowDy="2"
+        android:shadowDx="6"
+        android:textSize="14dp"
+        android:layout_below="@+id/txtNama5"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
